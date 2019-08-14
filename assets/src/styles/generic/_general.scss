@@ -1,0 +1,90 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+	background-color: #ffffff;
+	box-sizing: border-box;
+    font-size: 100%;
+    line-height: 1.5;
+}
+
+@media all and (min-width: 400px) {
+    html {
+        font-size: 112.5%;
+    }
+}
+
+@media all and (min-width: 1000px) {
+    html {
+        font-size: 125%;
+    }
+}
+
+body {
+    font-family: sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%
+}
+
+body,
+html {
+    min-height: 100vh;
+}
+
+a {
+	display: inline-block;
+	color: #ffffff;
+    font-size:12px;
+	text-decoration: none;
+
+	&:focus {
+		color: inherit;
+	}
+}
+
+ol, ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    max-width: 100%
+}
+
+form {
+    margin: 0
+}
+
+button, input[type="submit"], label[for] {
+    cursor: pointer
+}
+
+optgroup {
+    font-weight: 700
+}
+
+option {
+    color: #000;
+    background-color: #fff
+}
+
+[tabindex='-1']:focus {
+    outline: none
+}
+
+a, button, [role="button"], input, label, select, textarea {
+    touch-action: manipulation
+}
+
+#appRoot {
+    position: relative;
+}
+
+#mainContent {
+    position: relative;
+}

@@ -1,0 +1,41 @@
+{
+    "name": "debate-app",
+    "private": true,
+    "version": "1.0.0",
+    "author": "Amechi Egbe",
+    "description": "Finding the common ground amongst peers.",
+    "license": "UNLICENSED",
+    "keywords": [],
+    "dependencies": {
+        "react": "^16.9.0",
+        "react-dom": "^16.9.0"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.5.5",
+        "@babel/core": "^7.5.5",
+        "@babel/preset-env": "^7.5.5",
+        "@babel/preset-react": "^7.0.0",
+        "autoprefixer": "^9.6.1",
+        "babel-eslint": "^10.0.2",
+        "babel-loader": "^8.0.6",
+        "concurrently": "^4.1.1",
+        "cross-env": "^5.2.0",
+        "css-loader": "^3.2.0",
+        "eslint": "^6.1.0",
+        "eslint-config-react": "^1.1.7",
+        "eslint-loader": "^2.2.1",
+        "eslint-plugin-react": "^7.14.3",
+        "extract-css-chunks-webpack-plugin": "^4.6.0",
+        "html-webpack-plugin": "^3.2.0",
+        "node-sass": "^4.12.0",
+        "postcss-loader": "^3.0.0",
+        "sass-loader": "^7.2.0",
+        "url-loader": "^2.1.0",
+        "webpack": "^4.39.1",
+        "webpack-cli": "^3.3.6",
+        "webpack-dev-server": "^3.8.0"
+    },
+    "scripts": {
+        "dev": "cross-env NODE_ENV=development webpack-dev-server --host 0.0.0.0 --open --useLocalIp"
+    }
+}

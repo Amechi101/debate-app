@@ -1,0 +1,26 @@
+// Media queries
+$mq_breakpoints_sizes: 768px 1024px 1280px 1440px;
+
+$mq_breakpoints_name: 's' 'm' 'l' 'xl' 'xxl';
+
+$mq_s_only: '(max-width: ' + (nth($mq_breakpoints_sizes, 1) - 1) + ')';
+
+$mq_m: '(min-width: ' + nth($mq_breakpoints_sizes, 1) + ')';
+$mq_m_only: '(min-width: ' + nth($mq_breakpoints_sizes, 1) + ') and (max-width: ' + (nth($mq_breakpoints_sizes, 2) - 1) + ')';
+
+$mq_l: '(min-width: ' + nth($mq_breakpoints_sizes, 2) + ')';
+$mq_l_only: '(min-width: ' + nth($mq_breakpoints_sizes, 2) + ') and (max-width: ' + (nth($mq_breakpoints_sizes, 3) - 1) + ')';
+
+$mq_xl: '(min-width: ' + nth($mq_breakpoints_sizes, 3) + ')';
+$mq_xl_only: '(min-width: ' + nth($mq_breakpoints_sizes, 3) + ') and (max-width: ' + (nth($mq_breakpoints_sizes, 4) - 1) + ')';
+
+$mq_xxl: '(min-width: ' + nth($mq_breakpoints_sizes, 4) + ')';
+
+$mq_retina: '(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)';
+
+// Typography
+$letter-spacing: 0.15em;
+
+// Transitions
+$transition-duration: .3s;
+$transition-timing: ease-in-out;
