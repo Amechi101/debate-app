@@ -6,7 +6,7 @@ const MiniCssExtractPlugin = require('extract-css-chunks-webpack-plugin');
 const dev = process.env.NODE_ENV !== 'production';
 
 const HTMLWebpackPluginConfig = new HTMLWebpackPlugin({
-    template: path.join(__dirname, './app/index.html'),
+    template: path.join(__dirname, './dist/index.html'),
     filename: 'index.html',
     inject: 'body'
 });
@@ -23,16 +23,16 @@ const DefinePluginConfig = new webpack.DefinePlugin({
 module.exports = {
     mode: dev ? 'development' : 'production',
 	entry: {
-    	app: './assets/src/scripts/index.js'
+    	app: './src/scripts/index.js'
    	},
     output: {
         filename: 'bundle.js',
-    	path: path.resolve(__dirname, 'assets/dist/js')
+    	path: path.resolve(__dirname, 'dist/assets/js')
    	},
     devServer: {
         host: 'localhost',
         port: '3000',
-        hot: true,
+        hot: dev,
         headers: {
             'Access-Control-Allow-Origin': '*',
         },
@@ -62,7 +62,7 @@ module.exports = {
                         loader: MiniCssExtractPlugin.loader,
                         options: {
                             hot: dev,
-                            publicPath: path.resolve(__dirname, 'assets/dist/css')
+                            publicPath: path.resolve(__dirname, 'dist/assets/css')
                         }
                     },
                     'css-loader',
